@@ -8,8 +8,8 @@ deployment_type=openshift-enterprise
 
 # Cloud Provider Configuration
 openshift_cloudprovider_kind=aws
-openshift_cloudprovider_aws_access_key=AKIAI2Z2AU3WOO3AOTXA
-openshift_cloudprovider_aws_secret_key=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
+openshift_cloudprovider_aws_access_key=AKIAI2Z<snip>WOO3AOTXA
+openshift_cloudprovider_aws_secret_key=sLmSGGSs+xyy<snip>De1ibv6CMlfWxdPjS4Oq
 
 [masters]
 ip-10-15-5-173.ec2.internal openshift_public_hostname=c2.scollier-aws.sysdeseng.com
@@ -23,8 +23,8 @@ openshift_master_default_subdomain=apps-c2.scollier-aws.sysdeseng.com
 # Registry configuration
 openshift_hosted_registry_storage_kind=object
 openshift_hosted_registry_storage_provider=s3
-openshift_hosted_registry_storage_s3_accesskey=AKIAI2Z2AU3WOO3AOTXA
-openshift_hosted_registry_storage_s3_secretkey=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
+openshift_hosted_registry_storage_s3_accesskey=AKIA<snip>A3WOO3AOTXA
+openshift_hosted_registry_storage_s3_secretkey=sLmS<snip>rxKI2FDe1ibv6CMlfWxdPjS4Oq
 openshift_hosted_registry_storage_s3_bucket=scollier-aaron-test
 openshift_hosted_registry_storage_s3_region=us-east-1
 openshift_hosted_registry_storage_s3_chunksize=26214400
@@ -34,7 +34,7 @@ openshift_hosted_registry_acceptschema2=true
 openshift_hosted_registry_enforcequota=true
 
 # authentication setup
-openshift_master_identity_providers=[{'name': 'github', 'challenge': 'false', 'login': 'true', 'kind': 'GitHubIdentityProvider', 'clientID': '15e9758724cd67b6cf22', 'clientSecret': 'c9cb44e522afe61ba539747a71db783368bbb966', 'mappingMethod': 'claim'}]
+openshift_master_identity_providers=[{'name': 'github', 'challenge': 'false', 'login': 'true', 'kind': 'GitHubIdentityProvider', 'clientID': '15e9758<snip>db6cf22', 'clientSecret': 'c9cb442afe61b<snip>a5397db783368bbb966', 'mappingMethod': 'claim'}]
 
 [etcd]
 ip-10-15-5-173.ec2.internal
